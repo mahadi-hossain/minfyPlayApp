@@ -37,7 +37,7 @@ var files = [];
 
 fs.readdirSync(publicFolder, {withFileTypes:true}).forEach(file => {
 
-    if(file.isFile() && !file.name.endsWith("min.js")){
+    if(file.isFile() && !file.name.endsWith(".min.js")){
         files.push(publicFolder+file.name)
     }
     
